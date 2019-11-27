@@ -1,34 +1,37 @@
 from flask import Flask, escape, request
 import json
 
+with open('./ports.json', 'r') as ports: 
+    port_db = json.load(ports)
+
 app = Flask(__name__)
 
-def alive():
 
-    return 0
+
+
+
+
 
 
 @app.route('/')
 def hello():
-    name = request.args.get("name", "World")
-    return f'Hello, {escape(name)}!'
 
+    return json.dumps( {
+        "subresource_uris": {
+            "movies": "/movies",
+            "movie": "/movies/<id>",
+            "bookings": "/bookings",
+            "booking": "/bookings/<username>",
+            "showtimes": "/showtimes",
+            "showtime": "/showtimes/<date>",
+            "users": "/users",
+            "user": "/users/<username>",
+            "bookings": "/users/<username>/bookings",
+            "suggested": "/users/<username>/suggested"
+        }}, sort_keys = True, indent=4)
+    
+    
 if __name__ == '__main__':
 
-    a = {'movies' : '5001',
-         'payment' : '5002',
-         'campaign' : '5003',
-         'booking' : '5004',
-         'showtimes' : '5005',
-         'ticket' : '5006',
-         'user' : '5007'
-
-    }
-
-    with open('ports.json', 'w') as outfile:
-        json.dump(a, outfile)
     
-
-    print(b)
-
-    #app.run(host= '0.0.0.0', port= '5001', debug=True )
+    app.run(host= '0.0.0.0', port= '5008', debug=True )
