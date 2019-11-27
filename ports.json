@@ -1,1 +1,1 @@
-{"movies": "5001", "payment": "5002", "campaign": "5003", "bookings": "5004", "showtimes": "5005", "ticket": "5006", "user": "5007"}
+{"movies": "5001", "showtimes": "5002", "bookings": "5003","campaigns": "5004", "tickets": "5005", "users": "5006", "payment" : "5007"}

@@ -1,0 +1,265 @@
+ * Serving Flask app "ticket" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5005/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 274-628-353
+ * Debugger is active!
+ * Debugger PIN: 386-166-130
+ * Serving Flask app "ticket" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "./services/ticket.py", line 41, in <module>
+    app.run(port=5005, debug=True)
+  File "/home/dhsoner/anaconda3/lib/python3.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/home/dhsoner/anaconda3/lib/python3.7/site-packages/werkzeug/serving.py", line 987, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - [27/Nov/2019 13:08:07] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:08:12] "POST / HTTP/1.1" 404 -
+ * Serving Flask app "ticket" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "./services/ticket.py", line 41, in <module>
+    app.run(port=5005, debug=True)
+  File "/home/dhsoner/anaconda3/lib/python3.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/home/dhsoner/anaconda3/lib/python3.7/site-packages/werkzeug/serving.py", line 987, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+ * Serving Flask app "ticket" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "./services/ticket.py", line 41, in <module>
+    app.run(port=5005, debug=True)
+  File "/home/dhsoner/anaconda3/lib/python3.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/home/dhsoner/anaconda3/lib/python3.7/site-packages/werkzeug/serving.py", line 987, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+ * Serving Flask app "ticket" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "./services/ticket.py", line 41, in <module>
+    app.run(port=5005, debug=True)
+  File "/home/dhsoner/anaconda3/lib/python3.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/home/dhsoner/anaconda3/lib/python3.7/site-packages/werkzeug/serving.py", line 987, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - [27/Nov/2019 13:09:10] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:09:14] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:09:16] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:09:52] "POST / HTTP/1.1" 404 -
+ * Serving Flask app "ticket" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5005/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 222-653-164
+ * Debugger is active!
+ * Debugger PIN: 953-511-085
+127.0.0.1 - - [27/Nov/2019 13:10:57] "GET /tickets HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2019 13:10:58] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:10:59] "GET /tickets HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2019 13:11:00] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:11:01] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:11:02] "GET /tickets HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2019 13:11:03] "GET /tickets HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2019 13:11:04] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:11:06] "GET /tickets HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2019 13:11:20] "GET /tickets HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2019 13:11:23] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:11:24] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:11:24] "GET /tickets HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2019 13:11:25] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:11:26] "GET /tickets HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2019 13:11:27] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:11:28] "GET /tickets HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2019 13:11:29] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:11:30] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:11:30] "GET /tickets HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2019 13:11:32] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:11:33] "POST / HTTP/1.1" 404 -
+ * Serving Flask app "user" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 201-595-731
+ * Serving Flask app "ticket" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5005/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 210-952-073
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home/dhsoner/anaconda3/lib/python3.7/site-packages/pymongo/periodic_executor.py", line 96, in join
+    self._thread.join(timeout)
+  File "/home/dhsoner/anaconda3/lib/python3.7/threading.py", line 1036, in join
+    self._wait_for_tstate_lock(timeout=max(timeout, 0))
+  File "/home/dhsoner/anaconda3/lib/python3.7/threading.py", line 1048, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+ * Serving Flask app "bookings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5003/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 286-831-158
+ * Serving Flask app "campaign" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5004/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 158-189-275
+ * Serving Flask app "movies" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 223-021-666
+ * Serving Flask app "showtimes" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 214-708-449
+ * Serving Flask app "bookings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Serving Flask app "showtimes" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5003/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Serving Flask app "campaign" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5004/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Serving Flask app "movies" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Serving Flask app "user" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Serving Flask app "ticket" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5005/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger is active!
+ * Debugger PIN: 254-612-188
+ * Debugger PIN: 168-932-508
+ * Debugger is active!
+ * Debugger PIN: 219-467-298
+ * Debugger is active!
+ * Debugger PIN: 255-623-513
+ * Debugger is active!
+ * Debugger is active!
+ * Debugger PIN: 233-940-675
+ * Debugger PIN: 166-092-753
+ * Debugger is active!
+ * Debugger PIN: 244-290-889
+ * Debugger is active!
+ * Debugger PIN: 542-017-819
+ * Debugger is active!
+ * Debugger PIN: 461-130-799
+ * Debugger is active!
+ * Debugger PIN: 287-975-069
+ * Debugger is active!
+ * Debugger PIN: 546-866-483
+ * Debugger is active!
+ * Debugger PIN: 700-002-641
+127.0.0.1 - - [27/Nov/2019 13:28:39] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:28:41] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:28:41] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:28:42] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:28:43] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:28:44] "GET /tickets HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2019 13:28:47] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:28:48] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:28:55] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:28:56] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:28:56] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:28:57] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:28:58] "GET /user HTTP/1.1" 404 -
+ * Detected change in '/home/dhsoner/Desktop/micro/microservices/services/user.py', reloading
+ * Detected change in '/home/dhsoner/Desktop/micro/microservices/services/user.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 150-571-685
+127.0.0.1 - - [27/Nov/2019 13:29:20] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:29:21] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:29:21] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:29:22] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:29:22] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:29:23] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:29:24] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:29:25] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:29:31] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:29:31] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:29:32] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:29:33] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:29:34] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:29:35] "POST / HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2019 13:29:36] "POST / HTTP/1.1" 405 -
+127.0.0.1 - - [27/Nov/2019 13:29:37] "POST / HTTP/1.1" 405 -

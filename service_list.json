@@ -1,0 +1,12 @@
+"subresource_uris": {
+    "movies": "/movies",
+    "movie": "/movies/<id>",
+    "bookings": "/bookings",
+    "booking": "/bookings/<username>",
+    "showtimes": "/showtimes",
+    "showtime": "/showtimes/<date>",
+    "users": "/users",
+    "user": "/users/<username>",
+    "bookings": "/users/<username>/bookings",
+    "suggested": "/users/<username>/suggested"
+}
