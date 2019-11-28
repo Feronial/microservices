@@ -1,5 +1,5 @@
 from services import root_dir, nice_json
-from flask import Flask
+from flask import Flask, request, abort
 import json
 from werkzeug.exceptions import NotFound
 
@@ -32,6 +32,12 @@ def booking_record(username):
         raise NotFound
 
     return nice_json(bookings[username])
+
+
+@app.before_request
+def limit_remote_addr():
+    if request.remote_addr != '127.0.0.1':
+        abort(403)
 
 if __name__ == "__main__":
     app.run(port=5003, debug=True)

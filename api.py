@@ -4,6 +4,10 @@ import json
 import os
 import threading
 
+with open('./service_list.json', 'r') as service_json: 
+    
+    service_mods = json.load(service_json)
+
 with open('./ports.json', 'r') as ports: 
     
     port_db = json.load(ports)
@@ -35,29 +39,9 @@ def hello():
 
         return service_name
 
-    return json.dumps({
-        'Greetings' : 'Welcome to our Cinama Service. You can always use sub resources to access services....',
+    return json.dumps(service_mods, sort_keys = True, indent=4)
 
-        'mode' : 'subresource_uris',
 
-        "subresource_uris": {
-            "movies": "/movies",
-            "movie": "/movies/<id>",
-            "bookings": "/bookings",
-            "booking": "/bookings/<username>",
-            "showtimes": "/showtimes",
-            "showtime": "/showtimes/<date>",
-            "users": "/users",
-            "user": "/users/<username>",
-            "bookings": "/users/<username>/bookings",
-            "suggested": "/users/<username>/suggested"
-        },
-        
-        'Example' : {'mode' : "/movies/<id>"}
-
-        }, sort_keys = True, indent=4)
-    
-    
 if __name__ == '__main__':
 
     service_list = ['user.py','ticket.py','bookings.py','campaign.py','movies.py','showtimes.py'] 

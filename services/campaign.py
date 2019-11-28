@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,request, abort
 from services import root_dir, nice_json
 from werkzeug.exceptions import NotFound
 import json
@@ -37,7 +37,10 @@ def campaign_record():
     return json_util.dumps(campaigns, sort_keys=True, indent=4)
 
 
-
+@app.before_request
+def limit_remote_addr():
+    if request.remote_addr != '127.0.0.1':
+        abort(403)
 
 if __name__ == "__main__":
     app.run(port=5004, debug=True)

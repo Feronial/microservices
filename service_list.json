@@ -1,3 +1,6 @@
+{
+"Greetings" : " Welcome to our Cinama Service. You can always use sub resources to access services....",
+"mode" : "subresource_uris",
 "subresource_uris": {
     "movies": "/movies",
     "movie": "/movies/<id>",
@@ -8,5 +11,12 @@
     "users": "/users",
     "user": "/users/<username>",
     "bookings": "/users/<username>/bookings",
-    "suggested": "/users/<username>/suggested"
+    "suggested": "/users/<username>/suggested",
+    "tickets": "/tickets",
+    "ticket": "/tickets/<id>",
+    "campaigns": "/campaigns",
+    "campaign": "/campaigns/<id>"
+}
+
+
 }

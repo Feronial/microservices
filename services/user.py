@@ -1,5 +1,5 @@
 from services import root_dir, nice_json
-from flask import Flask
+from flask import Flask,request, abort
 from werkzeug.exceptions import NotFound, ServiceUnavailable
 import json
 import requests
@@ -49,18 +49,19 @@ def user_bookings(username):
         raise NotFound("User '{}' not found.".format(username))
 
     try:
-        users_bookings = requests.get("http://127.0.0.1:5003/bookings/{}".format(username))
+        user_booking = requests.get("http://127.0.0.1:5003/bookings/{}".format(username))
     except requests.exceptions.ConnectionError:
         raise ServiceUnavailable("The Bookings service is unavailable.")
 
-    if users_bookings.status_code == 404:
+    if user_booking.status_code == 404:
         raise NotFound("No bookings were found for {}".format(username))
-
-    users_bookings = users_bookings.json()
-
+    
+    
+    user_booking = user_booking.json()
+    return nice_json(user_booking)
     # For each booking, get the rating and the movie title
-    result = {}
-    for date, movies in users_bookings.iteritems():
+"""     result = {}
+    for date, movies in user_booking:
         result[date] = []
         for movieid in movies:
             try:
@@ -72,9 +73,9 @@ def user_bookings(username):
                 "title": movies_resp["title"],
                 "rating": movies_resp["rating"],
                 "uri": movies_resp["uri"]
-            })
+            }) """
 
-    return nice_json(result)
+        
 
 
 @app.route("/users/<username>/suggested", methods=['GET'])
@@ -87,6 +88,10 @@ def user_suggested(username):
     """
     raise NotImplementedError()
 
+@app.before_request
+def limit_remote_addr():
+    if request.remote_addr != '127.0.0.1':
+        abort(403)
 
 if __name__ == "__main__":
     app.run(port=5006, debug=True)
